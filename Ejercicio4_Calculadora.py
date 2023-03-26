@@ -1,0 +1,61 @@
+print('     ••••••••••••••••••••••')
+print('     • Calculadora básica •')
+print('     ••••••••••••••••••••••\n')
+
+print('    Seleccione la operación')
+print('    ***********************')
+print('    > 1: Suma')
+print('    > 2: Resta')
+print('    > 3: Multiplicación')
+print('    > 4: División')
+print('    > 5: División entera')
+print('    > 6: Exponente')
+print('    > 7: Módulo o resto')
+print('    ********************')
+
+n=int(input('    > Nro de operación: '))
+
+if n==1:
+    print('\n    Seleccionaste suma')
+    print('    ******************')
+    n=int(input('      Primer valor:  '))
+    n+=int(input('      Segundo valor: '))
+    print('\n    > Resultado =  %s <'%n)
+elif n==2:
+    print('\n    Seleccionaste resta')
+    print('    *******************')
+    n=int(input('    Primer valor: '))
+    n-=int(input('    Segundo valor: '))
+elif n==3:
+    print('\n    Seleccionaste multiplicación')
+    print('    ****************************')
+    n=int(input('    Primer valor: '))
+    n*=int(input('    Segundo valor: '))
+    print('\n    > Resultado =  %s <'%n)
+elif n==4:
+    print('\n    Seleccionaste división')
+    print('    ************************')
+    n=int(input('    Primer valor: '))
+    n/=int(input('    Segundo valor: '))
+    print('\n    > Resultado =  %s <'%round(n,2))
+elif n==5:
+    print('\n    Seleccionaste división entera')
+    print('    *******************************')
+    n=int(input('    Primer valor: '))
+    n//=int(input('    Segundo valor: '))
+    print('\n    > Resultado =  %s <'%n)
+elif n==6:
+    print('\n    Seleccionaste exponente')
+    print('    ***********************')
+    n=int(input('    Primer valor: '))
+    n**=int(input('    Segundo valor: '))
+    print('\n    > Resultado =  %s <'%n)
+elif n==7:
+    print('\n    Seleccionaste módulo o resto')
+    print('    ****************************') 
+    n=int(input('    Primer valor: '))
+    n%=int(input('    Segundo valor: '))
+    print('\n    > Resultado =  %s <'%n)
+else :
+    print('\n    !Error, operación no encontrada')
+print('Fin.')
